@@ -13,7 +13,9 @@ about.addEventListener('click', function (e) {
         });
         //hide other articles
         articles.forEach(function(article) {
-            article.classList.remove
-        })
+            article.classList.remove('active');
+        });
+        const element = document.getElementById(id);
+        element.classList.add('active');
     }
 })
